@@ -17,7 +17,7 @@ add_executable(bsod ${SOURCES} ${WIN32_RESOURCES})
 set(CMAKE_DEBUG_POSTFIX _debug)
 set(CMAKE_RELEASE_POSTFIX _release)
 set_target_properties(bsod PROPERTIES DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX})
-set_target_properties(bsod PROPERTIES DEBUG_POSTFIX ${CMAKE_RELEASE_POSTFIX})
+set_target_properties(bsod PROPERTIES RELEASE_POSTFIX ${CMAKE_RELEASE_POSTFIX})
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -pedantic-errors \
 -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion")
