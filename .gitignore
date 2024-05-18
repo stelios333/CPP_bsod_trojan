@@ -1,0 +1,8 @@
+build
+src/*.exe
+.vscode/*
+!.vscode/tasks.msys2.json
+*.exe
+*.pdb
+*.ilk
+*.obj
